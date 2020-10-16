@@ -97,6 +97,7 @@ Ratio is the proportion of spc_common in the given borough that has the given he
 For example, a ratio for red maple in Queens with a health of good is the proportion of good red maple trees in Queens.
 '''
 
+
 #Reshape data for question 1:
 df_totals = df.groupby(['borocode', 'spc_common'])['count_tree_id'].sum()
 df_total_by_borocode_specie_health = df.groupby(
