@@ -165,7 +165,7 @@ df_overall_health_index['spc_common'] = df_overall_health_index['spc_common'].ap
 external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
 
 app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
-
+server = app.server
 app.layout = html.Div([
     html.H4('Select Tree Specie'),
 
